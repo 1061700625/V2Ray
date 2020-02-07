@@ -10,6 +10,14 @@ Shadowsocks配置“n”
 按“y”生成二维码  
 输入 v2ray 回车，即可管理 V2Ray  
 
+## 注意
+配置文件中”inbounds”下的这几项信息需要留意：port（端口）、clients中的id（用户id）和alterId（额外id），它们将在配置客户端时用到。  
+配置文件无需任何改动即可正常使用，但注意防火墙要放行监听的端口。接下来启动V2Ray并设置开机启动：  
+```
+systemctl enable v2ray  
+systemctl start v2ray  
+```  
+  
 ## V2Ray 客户端
 Windows：  
 1、根据自身系统下载 V2Ray  
